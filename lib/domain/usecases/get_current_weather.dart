@@ -6,7 +6,9 @@ import '../repositories/weather_repository.dart';
 
 class GetCurrentWeatherUseCase {
   final WeatherRepository weatherRepository;
-  GetCurrentWeatherUseCase(this.weatherRepository);
+  GetCurrentWeatherUseCase({
+    required this.weatherRepository,
+  });
 
   Future<Either<Failure, WeatherEntity>> call(String cityName) {
     return weatherRepository.getCurrentWeather(cityName);

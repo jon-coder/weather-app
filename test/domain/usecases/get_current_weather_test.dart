@@ -12,7 +12,7 @@ void main() {
 
   setUp(() {
     mockWeatherRepository = MockWeatherRepository();
-    getCurrentWeatherUseCase = GetCurrentWeatherUseCase(mockWeatherRepository);
+    getCurrentWeatherUseCase = GetCurrentWeatherUseCase(weatherRepository: mockWeatherRepository);
   });
 
   const testWeatherDetail = WeatherEntity(
