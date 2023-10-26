@@ -1,4 +1,4 @@
-import 'package:tdd_weather_app/domain/entities/weather.dart';
+import '../../domain/entities/weather.dart';
 
 class WeatherModel extends WeatherEntity {
   const WeatherModel({
